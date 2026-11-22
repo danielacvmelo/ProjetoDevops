@@ -10,11 +10,6 @@ Além da aplicação funcional, o projeto contempla práticas de DevOps: version
 
 **Status:** planejamento concluído no backlog; implementação ainda não iniciada neste repositório. As funcionalidades, tecnologias e estrutura abaixo descrevem o desenvolvimento previsto.
 
-## Equipe
-
-- Daniela Carvalho Melo Pedrosa Ferreira
-- Alvino Pedrosa Ferreira
-
 ## Funcionalidades previstas
 
 ### MVP — versão mínima obrigatória
@@ -96,29 +91,6 @@ O ambiente local será executado com Docker Compose.
 └── README.md
 ```
 
-Os diretórios e arquivos serão adicionados conforme a implementação avançar.
-
-## Organização do trabalho
-
-Divisão inicial proposta, sujeita a ajustes entre os integrantes:
-
-| Responsável | Atividades |
-| --- | --- |
-| Daniela | Interface web, integração das telas com a API, build e testes do frontend e seu Dockerfile |
-| Alvino | API, banco de dados, extração de PDFs, regras de comparação, testes do backend, logs e seu Dockerfile |
-| Ambos | Contratos da API, revisão de Pull Requests, GitHub Actions, Docker Compose, documentação e demonstração final |
-
-As histórias **US-01 a US-13** compõem o MVP. As histórias **US-14 a US-17** correspondem às evoluções. O backlog detalhado será incluído em `docs/`.
-
-### Fluxo de contribuição
-
-1. Registrar a tarefa em uma Issue e definir seu responsável.
-2. Criar uma branch a partir da `main` atualizada, por exemplo `feat/cadastro-produtos`.
-3. Implementar a tarefa e realizar commits com mensagens claras, usando a conta do próprio autor.
-4. Executar os testes e o build aplicáveis.
-5. Abrir um Pull Request descrevendo a alteração e sua validação.
-6. Solicitar revisão ao outro integrante e integrar após os ajustes e verificações.
-
 ## Execução e testes
 
 A aplicação ainda não possui comandos de execução disponíveis neste repositório. Esta seção será atualizada com as versões necessárias, a configuração do ambiente e os comandos reais de inicialização, build e testes.
@@ -133,19 +105,6 @@ Os testes automatizados deverão cobrir, no mínimo:
 - Associação pendente.
 
 O pipeline do GitHub Actions executará build e testes em push e/ou Pull Request, sendo reprovado quando alguma dessas etapas falhar.
-
-## Etapas de entrega
-
-| Marco | Entrega |
-| --- | --- |
-| E0 | Histórias de usuário e Product Backlog |
-| E1 | Repositório, estrutura inicial, cadastros e fluxo de colaboração |
-| E2 | Upload, extração, associação e persistência dos dados |
-| E3 | Histórico, comparação, tratamento de casos extremos, testes e CI |
-| E4 | Ambiente reproduzível com Docker e Docker Compose |
-| E5 | Logs, documentação e apresentação do fluxo completo |
-
-Os prazos seguem as orientações do professor no ambiente da disciplina.
 
 ## Demonstração final prevista
 
