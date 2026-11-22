@@ -8,7 +8,7 @@ Aplicação web para apoiar uma loja de produtos naturais no acompanhamento dos 
 
 Além da aplicação funcional, o projeto contempla práticas de DevOps: versionamento com Git, colaboração por Pull Requests, testes automatizados, integração contínua, containers e logs de processamento.
 
-**Status:** planejamento concluído no backlog; implementação ainda não iniciada neste repositório. As funcionalidades, tecnologias e estrutura abaixo descrevem o desenvolvimento previsto.
+**Status:** estrutura inicial do frontend criada. As funcionalidades de negócio e o backend ainda serão implementados.
 
 ## Funcionalidades previstas
 
@@ -64,7 +64,7 @@ variação (%) = ((preço atual − preço anterior) / preço anterior) × 100
 
 | Camada | Tecnologia |
 | --- | --- |
-| Interface web | React ou Angular — escolha a definir |
+| Interface web | React com TypeScript e Vite |
 | API REST | Java com Spring Boot |
 | Banco de dados | PostgreSQL |
 | Build | Maven no backend e npm no frontend |
@@ -93,7 +93,7 @@ O ambiente local será executado com Docker Compose.
 
 ## Execução e testes
 
-A aplicação ainda não possui comandos de execução disponíveis neste repositório. Esta seção será atualizada com as versões necessárias, a configuração do ambiente e os comandos reais de inicialização, build e testes.
+As instruções para executar e verificar o frontend estão em [frontend/README.md](frontend/README.md). O backend e o ambiente com Docker Compose serão adicionados nas próximas etapas.
 
 O ambiente deverá usar variáveis de ambiente para configurações de banco, portas e demais parâmetros. O arquivo `.env.example` documentará as variáveis necessárias, sem credenciais reais. Segredos não devem ser versionados.
 

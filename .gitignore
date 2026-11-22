@@ -1,0 +1,15 @@
+# Dependências e arquivos gerados do frontend
+node_modules/
+dist/
+*.tsbuildinfo
+
+# Configurações locais e credenciais
+.env
+.env.*
+!.env.example
+*.local
+
+# Logs e arquivos do sistema
+*.log
+.DS_Store
+Thumbs.db
