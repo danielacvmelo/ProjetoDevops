@@ -19,6 +19,9 @@ button.primary:hover { background: #1a4d32; }
 .panel { background: #fff; border: 1px solid #dfe6e1; border-radius: 10px; }
 .editor { padding: 24px; margin-bottom: 24px; }
 .fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+fieldset.fields { border: 0; padding: 0; margin: 0; min-width: 0; }
+button:disabled { cursor: not-allowed; opacity: .6; }
+.load-error { margin-bottom: 20px; }
 .field { display: grid; gap: 6px; font-size: .875rem; }
 .field input, .field select { font-size: 1rem; }
 .form-actions { display: flex; flex-wrap: wrap; gap: 10px; justify-content: flex-end; margin-top: 24px; }

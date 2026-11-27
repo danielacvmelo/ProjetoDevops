@@ -31,7 +31,7 @@ Para parar os serviços, mantendo os dados:
 docker compose down
 ```
 
-O frontend ainda usa armazenamento local. A integração com a API será implementada separadamente. Abrir a API não altera nem importa os registros do navegador.
+O frontend consulta e salva os cadastros nesta API. Na execução local pelo Vite, as requisições em `/api` são encaminhadas para a porta `8080`. Os registros antigos do navegador não são importados automaticamente.
 
 ## Executar sem container para a API
 

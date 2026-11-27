@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div className="app">
-      <header className="app-header"><div className="brand"><span className="brand-symbol" aria-hidden="true">P</span><div><strong>Preços e estoque</strong><small>Gestão da loja</small></div></div><span className="local-notice">Dados salvos apenas neste navegador</span></header>
+      <header className="app-header"><div className="brand"><span className="brand-symbol" aria-hidden="true">P</span><div><strong>Preços e estoque</strong><small>Gestão da loja</small></div></div><span className="local-notice">Produtos e fornecedores</span></header>
       <div className="app-layout">
         <nav className="app-nav" aria-label="Cadastros">
           <span className="nav-caption">CADASTROS</span>
