@@ -1,0 +1,30 @@
+.welcome {
+  max-width: 880px;
+  margin-inline: auto;
+  padding: clamp(2rem, 8vw, 6rem) 1.5rem;
+}
+
+.eyebrow {
+  color: #28624e;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  line-height: 1.15;
+  letter-spacing: -0.04em;
+  margin-bottom: 1.5rem;
+}
+
+.description { max-width: 60ch; font-size: 1.125rem; }
+
+.notice {
+  background: #fff;
+  border: 1px solid #cbdcd3;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.notice h2 { font-size: 1.25rem; margin-bottom: 0.75rem; }
+.notice p { margin-bottom: 0; }
