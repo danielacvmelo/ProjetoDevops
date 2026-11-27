@@ -144,4 +144,4 @@ Os testes usam H2 em modo PostgreSQL, exclusivo do perfil `test`, aplicando a me
 - `src/main/resources/db/migration`: criação versionada das tabelas.
 - `src/test`: testes automatizados da API.
 
-Importação de PDFs, comparação de preços e histórico serão implementados nas próximas etapas.
+A API de importação, conferência, associação e histórico está documentada em [docs/api-importacao.md](../docs/api-importacao.md). Os PDFs fictícios e o roteiro de demonstração ficam em [docs/exemplos](../docs/exemplos/README.md). A interface React de importação será adicionada separadamente.
