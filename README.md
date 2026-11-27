@@ -8,7 +8,7 @@ Aplicação web para apoiar uma loja de produtos naturais no acompanhamento dos 
 
 Além da aplicação funcional, o projeto contempla práticas de DevOps: versionamento com Git, colaboração por Pull Requests, testes automatizados, integração contínua, containers e logs de processamento.
 
-**Status:** frontend com cadastros de produtos e fornecedores e armazenamento local no navegador. A integração com o backend e o banco ainda será implementada.
+**Status:** frontend com cadastros e armazenamento local no navegador; backend com APIs de produtos e fornecedores, validações, migrações de banco e configuração para PostgreSQL. A conexão entre frontend e API ainda será implementada.
 
 ## Funcionalidades previstas
 
@@ -93,7 +93,7 @@ O ambiente local será executado com Docker Compose.
 
 ## Execução e testes
 
-As instruções para executar e verificar o frontend estão em [frontend/README.md](frontend/README.md). O backend e o ambiente com Docker Compose serão adicionados nas próximas etapas.
+As instruções para executar e verificar cada parte estão em [frontend/README.md](frontend/README.md) e [backend/README.md](backend/README.md). O Docker Compose executa a API e o PostgreSQL; o frontend é iniciado separadamente com npm.
 
 O ambiente deverá usar variáveis de ambiente para configurações de banco, portas e demais parâmetros. O arquivo `.env.example` documentará as variáveis necessárias, sem credenciais reais. Segredos não devem ser versionados.
 
