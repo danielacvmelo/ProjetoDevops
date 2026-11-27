@@ -8,7 +8,7 @@ Aplicação web para apoiar uma loja de produtos naturais no acompanhamento dos 
 
 Além da aplicação funcional, o projeto contempla práticas de DevOps: versionamento com Git, colaboração por Pull Requests, testes automatizados, integração contínua, containers e logs de processamento.
 
-**Status:** estrutura inicial do frontend criada. As funcionalidades de negócio e o backend ainda serão implementados.
+**Status:** frontend com cadastros de produtos e fornecedores e armazenamento local no navegador. A integração com o backend e o banco ainda será implementada.
 
 ## Funcionalidades previstas
 

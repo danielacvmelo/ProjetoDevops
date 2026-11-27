@@ -1,18 +1,23 @@
+import { useState } from 'react'
+import Products from './pages/Products'
+import Suppliers from './pages/Suppliers'
 import './App.css'
 
 function App() {
+  const [page, setPage] = useState<'products' | 'suppliers'>('products')
+
   return (
-    <main className="welcome">
-      <p className="eyebrow">Monitoramento da loja</p>
-      <h1>Preços, estoque e compras</h1>
-      <p className="description">
-        Acompanhe os preços dos fornecedores e mantenha o histórico de compras organizado.
-      </p>
-      <section className="notice" aria-labelledby="development-title">
-        <h2 id="development-title">Sistema em desenvolvimento</h2>
-        <p>Os cadastros e a importação de tabelas de preços serão disponibilizados nas próximas etapas.</p>
-      </section>
-    </main>
+    <div className="app">
+      <header className="app-header"><div className="brand"><span className="brand-symbol" aria-hidden="true">P</span><div><strong>Preços e estoque</strong><small>Gestão da loja</small></div></div><span className="local-notice">Dados salvos apenas neste navegador</span></header>
+      <div className="app-layout">
+        <nav className="app-nav" aria-label="Cadastros">
+          <span className="nav-caption">CADASTROS</span>
+          <button type="button" aria-current={page === 'products' ? 'page' : undefined} onClick={() => setPage('products')}>Produtos</button>
+          <button type="button" aria-current={page === 'suppliers' ? 'page' : undefined} onClick={() => setPage('suppliers')}>Fornecedores</button>
+        </nav>
+        <main className="app-content">{page === 'products' ? <Products /> : <Suppliers />}</main>
+      </div>
+    </div>
   )
 }
 
